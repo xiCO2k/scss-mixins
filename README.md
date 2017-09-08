@@ -1,6 +1,6 @@
-# scss-mixins
+# xico2k-scss-mixins
 
-This is my personal mixins to use one my projects.
+This is my personal mixins.
 
 ## Installation
 
