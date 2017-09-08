@@ -1,0 +1,58 @@
+@import "_arrows";
+@import "_flexbox";
+
+@mixin transition($args...) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+
+@mixin transform($args...) {
+    -webkit-transform: $args;
+    -moz-transform: $args;
+    -ms-transform: $args;
+    -o-transform: $args;
+    transform: $args;
+}
+
+@mixin appearance ($value) {
+    -webkit-appearance: $value;
+    -moz-appearance: $value;
+    appearance: $value;
+}
+
+@mixin filter($value) {
+    -webkit-filter: $value;
+    -moz-filter: $value;
+    -ms-filter: $value;
+    -o-filter: $value;
+    filter: $value;
+}
+
+@mixin translateX($value) {
+    @include transform(translateX($value));
+}
+
+@mixin translateY($value) {
+    @include transform(translateY($value));
+}
+
+@mixin translate($value) {
+    @include transform(translate($value));
+}
+
+@mixin box-shadow($args...) {
+    -webkit-box-shadow: $args;
+    -moz-box-shadow: $args;
+    box-shadow: $args;
+}
+
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}

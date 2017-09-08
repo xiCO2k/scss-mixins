@@ -1,0 +1,48 @@
+@mixin arrow($orientation, $width, $height, $color) {
+    position: relative;
+    display: inline-block;
+    top: -$height/2;
+
+    width: 0; height: 0;
+    border-style: solid;
+
+    @include transition(border-color .2s ease-in-out);
+
+    @if ($orientation == "top") {
+        border-width: 0 ($width/2) $height ($width/2);
+        border-color: transparent transparent $color transparent;
+    }
+
+    @if ($orientation == "right") {
+        border-width: ($height/2) 0 ($height/2) $width;
+        border-color: transparent transparent transparent $color;
+    }
+
+    @if ($orientation == "bottom") {
+        border-width: $height ($width/2) 0 ($width/2);
+        border-color: $color transparent transparent transparent;
+    }
+
+    @if ($orientation == "left") {
+        border-width: ($height/2) $width ($height/2) 0;
+        border-color: transparent $color transparent transparent;
+    }
+}
+
+@mixin arrow-hover($orientation, $color) {
+    @if ($orientation == "top") {
+        border-color: transparent transparent $color transparent;
+    }
+
+    @if ($orientation == "right") {
+        border-color: transparent transparent transparent $color;
+    }
+
+    @if ($orientation == "bottom") {
+        border-color: $color transparent transparent transparent;
+    }
+
+    @if ($orientation == "left") {
+        border-color: transparent $color transparent transparent;
+    }
+}
