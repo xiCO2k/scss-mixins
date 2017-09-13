@@ -1,5 +1,7 @@
 # xico2k-scss-mixins
 
+[![NPM](https://nodei.co/npm/xico2k-scss-mixins.png?downloads=true&downloadRank=true)](https://npmjs.org/package/xico2k-scss-mixins)
+
 This is my personal mixins.
 
 ## Installation
