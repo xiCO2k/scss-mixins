@@ -3,10 +3,18 @@
 This is my personal mixins.
 
 ## Installation
-
-    `npm install xico2k-scss-mixins`
+With [npm](https://www.npmjs.com):
+```
+$ npm i xico2k-scss-mixins
+```
+or with [yarn](https://yarnpkg.com):
+```
+$ yarn add xico2k-scss-mixins
+```
 
 ## Usage
 
-    On your SCSS file just add:
-    `@import "~xico2k-scss-mixins/mixins";`
+On your SCSS file just add:
+```css
+@import "~xico2k-scss-mixins/mixins";
+```
