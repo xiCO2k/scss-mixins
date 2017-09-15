@@ -24,7 +24,7 @@ On your SCSS file just add:
 
 ## Methods and Examples
 
-```css
+```scss
 /* Simple perfixes like compass */
 @include transition(left .2s ease-in-out);
 @include transform(rotate(180deg));
