@@ -2,8 +2,8 @@
   "name": "xico2k-scss-mixins",
   "description": "My Personal SCSS Mixins",
   "main": "mixins.scss",
-  "repository": "https://github.com/xiCO2k/scss-mixins.git",
-  "author": "Francisco Madeira <xico2k@gmail.com>",
+  "repository": "https://github.com/xico2k/scss-mixins",
+  "author": "Francisco Madeira",
   "license": "MIT",
-  "version": "0.0.7"
+  "version": "0.0.8"
 }
